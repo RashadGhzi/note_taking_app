@@ -80,11 +80,11 @@ export default function AddNote() {
             </div>
           )}
           {!noteState.editMode ? (
-            <button className="add-note-button" type="submit">
+            <button className="note-button add-btn" type="submit">
               ADD NOTE
             </button>
           ) : (
-            <button className="add-note-button" type="submit">
+            <button className="note-button update-btn" type="submit">
               UPDATE NOTE
             </button>
           )}
