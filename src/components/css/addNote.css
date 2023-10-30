@@ -35,14 +35,15 @@ textarea {
   border-radius: 3px;
   color: white;
   cursor: pointer;
+  font-size: .8em;
   transition: all 0.3s;
 }
 
-.add-btn{
+.add-btn {
   background: darkolivegreen;
 }
 
-.update-btn{
+.update-btn {
   background: darkgoldenrod;
 }
 
@@ -68,4 +69,39 @@ textarea {
   font-size: 0.8em;
   letter-spacing: 1.4px;
   margin-left: 15px;
+}
+
+.select-note-filter {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid darkgoldenrod;
+  outline: none;
+  border-radius: 3px;
+  letter-spacing: 1.3px;
+  color: black;
+  font-size: .9em;
+}
+
+
+.filter-title{
+  color: darkgreen;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: .9px;
+  font-size: 1.9em;
+}
+
+.filter-label{
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  font-size: 1em;
+  color: darkgoldenrod;
+  margin-bottom: 15px;
+}
+
+.filter{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }

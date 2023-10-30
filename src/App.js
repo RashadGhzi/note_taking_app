@@ -3,6 +3,7 @@ import NoteContext from "./context/NoteContext";
 import AddNote from "./components/AddNote";
 import "./App.css";
 
+
 function App() {
   return (
     <>

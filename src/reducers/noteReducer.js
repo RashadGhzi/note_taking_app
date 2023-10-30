@@ -31,7 +31,7 @@ export default function noteReducer(state, action) {
             id: state.id,
             title: action.payload.title,
             content: action.payload.content,
-            task_completed: action.payload.task_completed,
+            task_completed: state.task_completed,
           };
         }
         return note;
@@ -43,10 +43,13 @@ export default function noteReducer(state, action) {
         title: "",
         content: "",
         editMode: false,
+        task_completed: false,
       };
-    
-      case "TASK_COMPLETE_ONCHANGE":
-        return {...state, task_completed:action.payload}
+
+    case "TASK_COMPLETE_ONCHANGE":
+      return { ...state, task_completed: action.payload };
+    case "FILTER_NOTE":
+      return { ...state, filter_notes: action.payload };
     default:
       return state;
   }

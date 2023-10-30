@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./css/addNote.css";
 import { noteContext } from "../context/NoteContext";
+import NoteFilter from "./NoteFilter";
 
 export default function AddNote() {
   const { noteState, dispatch } = useContext(noteContext);
@@ -69,14 +70,13 @@ export default function AddNote() {
                 type="checkbox"
                 checked={noteState.task_completed}
                 onChange={(e) => {
-                  console.log("task", noteState.task_completed);
                   dispatch({
                     type: "TASK_COMPLETE_ONCHANGE",
                     payload: e.target.checked,
                   });
                 }}
               />
-              <div className="check-info">Check, If It's Done</div>
+              <div className="check-info">Check, If You Finished the Task</div>
             </div>
           )}
           {!noteState.editMode ? (
@@ -89,6 +89,8 @@ export default function AddNote() {
             </button>
           )}
         </form>
+
+        <NoteFilter />
       </div>
     </>
   );

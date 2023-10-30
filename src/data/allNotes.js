@@ -11,7 +11,7 @@ const all_notes = [
     title: "lorem ipsum dolor sit amet title 2",
     content:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab obcaecati, nesciunt architecto magni consequuntur ipsam necessitatibus repudiandae minima dignissimos perferendis aspernatur eos corrupti optio labore fuga beatae, nihil nam distinctio et numquam nisi ipsa? Numquam quasi deserunt, dolorem veritatis officia autem, inventore iure odit adipisci nulla rerum sint minima. content-2",
-    task_completed: false,
+    task_completed: true,
   },
   {
     id:3,
@@ -25,7 +25,7 @@ const all_notes = [
     title: "lorem ipsum dolor sit amet title 4",
     content:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab obcaecati, nesciunt architecto magni consequuntur ipsam necessitatibus repudiandae minima dignissimos perferendis aspernatur eos corrupti optio labore fuga beatae, nihil nam distinctio et numquam nisi ipsa? Numquam quasi deserunt, dolorem veritatis officia autem, inventore iure odit adipisci nulla rerum sint minima. content-4",
-    task_completed: false,
+    task_completed: true,
   },
 ];
 
